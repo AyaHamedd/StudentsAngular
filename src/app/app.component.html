@@ -1,0 +1,27 @@
+<body>
+  <div id="navbar">
+    <div>
+      <p class="navbar-brand" routerLink="/">
+        <img
+          src="https://www.flaticon.com/svg/vstatic/svg/3048/3048425.svg?token=exp=1620409380~hmac=eb8c204dd4488f74122ec08be40d2284"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Students
+      </p>
+    </div>
+    <div>
+      <a
+        data-bs-toggle="modal"
+        data-bs-target="#studentRegister"
+        id="add"
+        class="btn btn-info"
+        >Add Student</a
+      >
+    </div>
+  </div>
+  <app-student-register></app-student-register>
+  <router-outlet></router-outlet>
+</body>

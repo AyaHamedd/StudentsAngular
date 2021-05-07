@@ -1,0 +1,20 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.7fr 0.3fr 1.4fr 0.3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "name email email details";
+  background: whitesmoke;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.name {
+  grid-area: name;
+}
+.email {
+  grid-area: email;
+}
+.details {
+  grid-area: details;
+}

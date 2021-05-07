@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+/*
+VIEW IN FULL SCREEN MODE
+FULL SCREEN MODE: http://salehriaz.com/404Page/404.html
+
+DRIBBBLE: https://dribbble.com/shots/4330167-404-Page-Lost-In-Space
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+html,
+body {
+  margin: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  background: rgb(192, 200, 240);
+  background: radial-gradient(
+    circle,
+    rgba(192, 200, 240, 1) 0%,
+    rgba(214, 152, 165, 1) 100%
+  );
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#add {
+  left: 5rem;
+}
+
+.btn {
+  font-size: 0.7rem;
+}

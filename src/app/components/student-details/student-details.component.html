@@ -1,0 +1,39 @@
+<div *ngIf="student; else noStudent" class="container mt-3">
+  <div class="d-flex justify-content-center">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Name : {{ student.name }}</h5>
+        <p class="card-text">Email : {{ student.email }}</p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="col-4">
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#studentEdit"
+            id="add"
+            class="btn btn-info"
+            >Edit</a
+          >
+        </div>
+        <app-student-edit [studentInfo]="student"></app-student-edit>
+
+        <div class="col-4">
+          <button
+            type="submit"
+            class="btn btn-warning text-center"
+            data-bs-toggle="modal"
+            data-bs-target="#deleteBtn"
+          >
+            Delete
+          </button>
+          <app-delete-student></app-delete-student>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #noStudent>
+  <p class="alert alert-danger mt-3">
+    We couldn't find any students with this id
+  </p>
+</ng-template>
