@@ -1,13 +1,16 @@
 {
-  "name": "StudentsApp",
+  "name": "studentsapp",
+  "homepage": "https://ayahamedd.github.io/StudentsAngular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve & json-server --watch db.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "private": true,
   "dependencies": {

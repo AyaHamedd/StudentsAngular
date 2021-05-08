@@ -6,10 +6,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { DeleteStudentComponent } from "./components/delete-student/delete-student.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
+import { StudentCardComponent } from "./components/student-card/student-card.component";
 import { StudentDetailsComponent } from "./components/student-details/student-details.component";
 import { StudentEditComponent } from "./components/student-edit/student-edit.component";
 import { StudentRegisterComponent } from "./components/student-register/student-register.component";
-import { StudentComponent } from "./components/student/student.component";
 import { StudentsComponent } from "./components/students/students.component";
 import { StudentsService } from "./services/students.service";
 
@@ -20,7 +20,7 @@ import { StudentsService } from "./services/students.service";
     StudentsComponent,
     StudentDetailsComponent,
     NotFoundComponent,
-    StudentComponent,
+    StudentCardComponent,
     StudentRegisterComponent,
     DeleteStudentComponent,
     StudentEditComponent,

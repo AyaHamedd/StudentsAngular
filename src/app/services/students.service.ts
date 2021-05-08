@@ -10,7 +10,7 @@ import { Student } from "../models/student";
   providedIn: "root",
 })
 export class StudentsService {
-  readonly baseURL: string = "http://localhost:3000/students";
+  readonly baseURL: string = "https://immense-taiga-73032.herokuapp.com/students";
   constructor(private myclient: HttpClient) {}
 
   isUpdated: boolean = false;
